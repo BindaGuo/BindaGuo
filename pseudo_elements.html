@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>偽元素選擇器</title>
+	<style>
+		p:first-line { color:red;}
+		p:first-letter { color:green;}
+		.price:before { content:"NT$";background-color:yellow;}
+		.price:after { content:"元整";color:red;}
+	</style>
+</head>
+<body>
+	<h2>偽元素選擇器</h2>
+	<hr/>
+	<div> 
+		<p>
+			第一行會套用紅色<br/>
+			第二行以後不會變色 
+		</p>
+	</div>
+
+	<div> 
+		<p>
+			第一個字會套用綠色<br/>
+			其它的字不會變色 
+		</p>
+	</div>
+
+	<div> 
+		<span class="price"> 1000 </span>
+	</div>
+</body>
+</html>

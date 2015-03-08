@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>猜數字遊戲</title>
+</head>
+
+<body>
+<h2>猜數字遊戲</h2>
+<script>
+//變數宣告
+var target=34;
+var number=0;
+var times=0;
+//do/while無窮迴圈
+do{
+   number=window.prompt("輸入數字",number);
+   //離開迴圈
+   if(number==null || number==target)
+   break;
+   //判對是太大還是太小
+   if(number>target){
+   alert(number+"太大!");
+   times++;
+   continue;
+   }
+   else
+    if(number!=target){
+	 alert(number+"太小!");
+	 times++;
+	 continue;
+	}
+	
+}while(true);
+if(number==null)
+  document.write("不猜了答案為:"+target+"<br/>");
+  else
+  {
+	  document.write("猜對了!答案為:"+target+"<br/>");
+	  document.write("共猜了"+(times+1)+"次<br/>");
+  }
+
+</script>
+</body>
+</html>

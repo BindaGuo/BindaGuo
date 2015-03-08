@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>後代選擇器</title>
+	<style>
+		a { color:blue;}
+		h1 a { color:red;}
+		#wrapper a { color:green;}
+		#wrapper p { color:gray;}
+	</style>
+</head>
+<body>
+	<h2>後代選擇器</h2>
+	<hr/>
+	<a> 只設定a標籤會套用藍色</a>
+
+	<h1>
+		<a>在h1裡的a標籤會套用紅色</a>
+	</h1>
+
+	<div id="wrapper">
+		<a>在wrapper裡的a標籤會套用綠色</a>
+		<p>在wrapper裡的p標籤會套用灰色</p>
+	</div>
+</body>
+</html>

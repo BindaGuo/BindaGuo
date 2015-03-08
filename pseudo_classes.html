@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>偽類選擇器</title>
+	<style>
+		p:first-child { color:red;}
+		input:focus  { background-color:yellow;}
+		a:link{ background-color:red; }
+		a:visited{ background-color:yellow; }
+		label:hover{ background-color:green; }
+		label:active{ background-color:blue; }
+	</style>
+</head>
+<body>
+	<h2>偽類選擇器</h2>
+	<hr/>
+	<div> 
+		<p>第一個 p 會套用紅色</p>
+		<p>其它的 p 不會變色</p>
+	</div>
+	
+	<h3>提示：接收键盘事件或其他用户输入的元素都允许 :focus 选择器。</h3>
+	<form>
+		First name: <input type="text" name="firstname" /><br>
+		Last name: <input type="text" name="lastname" />
+	</form>
+	<div> 
+		<a href="#">google</a>
+	</div>
+	<div> 
+		<label>123</label>
+	</div>
+</body>
+</html>
