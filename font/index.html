@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>課表</title>
+	<style>
+		@font-face {
+			font-family:"瀨戶字體";	
+			src: url(font/sp-setofont.ttf);
+		}
+		html, body {
+			width: 100%;	
+			font-family: "瀨戶字體";	
+			font-size: 105%;			
+		}		
+		.classtable {
+			width: 90%;	
+			margin-left: 2em;
+			margin-right: 2em;
+			text-align: center;			
+		}
+		.classtable thead th{
+			width: 18%;
+			border-top-left-radius:0.5em;	
+			border-top-right-radius:0.5em;
+			height: 3em;
+			background-color: #0092C7;		
+		}
+		.classtable thead th:hover{
+			opacity:0.8;		
+		}
+		.classtable thead th:first-child {
+			width: 10%;
+			background-color: #FFF;
+		}			
+		.classtable tbody td{
+			background-color: #F3E59A;
+		}
+		.classtable tbody td:hover{
+			opacity:0.8;		
+		}
+		.classtable tbody td:first-child{
+			background-color: #0092C7;
+			border-top-left-radius:0.5em;	
+			border-bottom-left-radius:0.5em;
+		}
+		.classtable .course{
+			background-color: #F3B59B;
+		}
+		.classtable .work{
+			background-color: #9FE0F6;
+		}
+	</style>
+</head>
+<body>
+	<table class="classtable">
+		<thead>
+			<tr>
+				<th></th>
+				<th>一</th>
+				<th>二</th>
+				<th>三</th>
+				<th>四</th>	
+				<th>五</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<p>1</p>
+					<p>8:10­-9:00</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td class="course">
+					<p>作業系統(實習) / 郭士煒</p>
+					<p>計中203</p>
+				</td>
+				<td  class="course" rowspan="2" onclick="window.location.href='http://alcat.pu.edu.tw/outline/list_abstract_content_100.php?pkey=95120A005773&ls_year=1032&t_num=003636'">
+					<p>中級英檢閱讀 / 張文忠</p>
+					<p>伯鐸221</p>
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<p>2</p>
+					<p>9:10­-10:00</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td class="course" rowspan="3"  onclick="window.location.href='http://alcat.pu.edu.tw/outline/list_abstract_content_100.php?pkey=71103B000884&ls_year=1032&t_num=002307'">
+					<p>作業系統 / 簡永仁</p>
+					<p>主顧222</p>
+				</a>					
+			</td>				
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<p>3</p>
+				<p>10:10­-11:00</p>
+			</td>
+			<td></td>
+			<td class="course" rowspan="2" onclick="window.location.href='http://alcat.pu.edu.tw/outline/list_abstract_content_100.php?pkey=641B3G007683&ls_year=1032&t_num=003192'">
+				<p>困境與人生 / 賴淑蘭</p>
+				<p>主顧217</p>
+			</td>
+			<td class="course" rowspan="2" onclick="window.location.href='http://alcat.pu.edu.tw/outline/list_abstract_content_100.php?pkey=95120D005772&ls_year=1032&t_num=005475'">
+				<p>中級英檢聽力 / 柯儒伯</p>
+				<p>伯鐸136</p>
+			</td>
+			<td></td>
+		</tr>	
+		<tr>
+			<td>
+				<p>4</p>
+				<p>11:10-12:00</p>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>	
+		<tr>
+			<td>
+				<p>午</p>
+				<p>12:10­13:00</p>
+			</td>
+
+			<td class="work">
+				
+				<p>程式設計教學助理</p>
+				<p>主顧207</p>
+				
+			</td>
+
+
+			<td class="work">
+				<p>程式設計教學助理</p>
+				<p>主顧207</p>
+			</td>
+			<td></td>
+			<td class="work">
+				<p>程式設計教學助理</p>
+				<p>主顧306</p>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<p>5</p>
+				<p>13:10­-14:00</p>
+			</td>
+			<td class="course" rowspan="3" onclick="window.location.href='http://alcat.pu.edu.tw/outline/list_abstract_content_100.php?pkey=72102A002060&ls_year=1032&t_num=004167'">				
+				<p>程式語言 / 謝孟諺</p>
+				<p>主顧322</p>
+			</td>
+			<td class="course" rowspan="3" onclick="window.location.href='http://alcat.pu.edu.tw/outline/list_abstract_content_100.php?pkey=71103B000885&ls_year=1032&t_num=005123'">
+				<p>作業研究 / 王國雄</p>
+				<p>主顧222</p>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+		</tr>	
+		<tr>
+			<td>
+				<p>6</p>
+				<p>14:10­-15:00</p>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+
+		</tr>	
+		<tr>
+			<td>
+				<p>7</p>
+				<p>15:10­-16:00</p>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+
+
+		</tr>
+		<tr>
+			<td>
+				<p>8</p>
+				<p>16:10­-17:00</p>
+			</td>
+			<td></td>
+			<td class="work">
+				<p>行雲者網頁研究小組開會</p>
+				<p>主顧402</p>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<p>9</p>
+				<p>17:10­-18:00</p>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="work">
+				<p>行雲者維修小組開會</p>
+				<p>主顧402</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>10</p>
+				<p>18:05­-18:55</p>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>
+				<p>！！！</p>
+				<p>19:00­-22:00</p>
+			</td>
+			<td></td>
+			<td class="work">
+				<p>行雲者工作小組開會</p>
+				<p>主顧402</p>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>			
+		<tr>
+			<td>
+				<p>？？？</p>
+				<p>22:00-23:00</p>
+			</td>
+			<td></td>
+			<td class="work">
+				<p>專題小組開會</p>
+				<p>主顧402</p>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tfoot>
+
+	</tfoot>
+</table>
+
+</body>
+</html>
